@@ -1,0 +1,6 @@
+@servicebusmetricsenabler_HostAddress = http://localhost:5167
+
+GET {{servicebusmetricsenabler_HostAddress}}/otel/
+Accept: application/json
+
+###
