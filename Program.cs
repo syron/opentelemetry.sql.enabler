@@ -36,7 +36,6 @@ builder.Services.AddSwaggerGen();
 builder.Configuration.AddEnvironmentVariables();
 
 var connectionString = builder.Configuration[GLOBALS.OTELSQLCONNECTIONSTRING];
-Console.WriteLine(connectionString);
 if (connectionString is null) throw new ArgumentException("No sql connection string found. Shutdown.");
 builder.Services.AddSingleton(new SqlMetricsService(GLOBALS.OTELMETRICSMETERNAME, connectionString));
 
