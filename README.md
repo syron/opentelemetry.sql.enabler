@@ -1,14 +1,30 @@
-# OTEL Enabler
+# Microsoft SQL Server OTEL Enabler
 
 This service provides metrics to an OTEL (OpenTelemetry) endpoint which then can be monitored using e.g. prometheus, grafana, opensearch or other.
 
+## Tested on
+
+### SQL Server Linux
+
+```https://hub.docker.com/r/microsoft/mssql-server```
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=P1ngP0ng" -p 1433:1433 --platform=linux/amd64 -d mcr.microsoft.com/mssql/server:2022-latest
+
+
 ## Metrics
 
-### Example 1
+### SQL
 
-* metric 1
-* metric 2
-* metric 3
+* active_connections
+* cpu_usage_percentage
+* database_size_mb
+* buffer_cache_hit_ratio
+* page_life_expectancy_seconds
+* batch_requests_per_second
+* user_connections
+* lock_waits_per_second
+* full_scans_per_second
+* compilations_per_second
 
 ## Prometheus Metrics Scrape Endpoint
 
