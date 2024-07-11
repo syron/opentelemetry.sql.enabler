@@ -13,11 +13,10 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=P1ngP0ng" -p 1433:1433 --pla
 
 ## Metrics
 
-### SQL
+### SQL Server
 
 * active_connections
 * cpu_usage_percentage
-* database_size_mb
 * buffer_cache_hit_ratio
 * page_life_expectancy_seconds
 * batch_requests_per_second
@@ -25,6 +24,12 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=P1ngP0ng" -p 1433:1433 --pla
 * lock_waits_per_second
 * full_scans_per_second
 * compilations_per_second
+
+### Databases
+
+For each database, the following metrics are created:
+
+* database_size_mb
 
 ## Prometheus Metrics Scrape Endpoint
 
