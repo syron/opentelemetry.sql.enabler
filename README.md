@@ -1,4 +1,4 @@
-# Microsoft SQL Server OTEL Enabler
+# OTEL Enabler for Microsoft SQL Server
 
 This service provides metrics to an OTEL (OpenTelemetry) endpoint which then can be monitored using e.g. prometheus, grafana, opensearch or other.
 
