@@ -13,11 +13,11 @@ services:
       context: .
       target: final
     environment:
-      - ServiceBusConnectionString=
       - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://0.0.0.0:4318
       - OTEL_EXPORTER_OTLP_HEADERS=
       - ASPNETCORE_ENVIRONMENT=Development
+      - OtelSqlConnectionString=
     ports:
       - 8080:8080
 

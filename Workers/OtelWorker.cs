@@ -1,6 +1,5 @@
 using Quartz;
 using System.Diagnostics.Metrics;
-using Azure.Messaging.ServiceBus.Administration;
 
 public class OtelWorker : IJob
 {
